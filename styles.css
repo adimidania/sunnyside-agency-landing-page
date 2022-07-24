@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,900&display=swap");
+
+/**
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+**/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main,
+footer,
+header,
+.pic-preview {
+  width: 100%;
+}
+
+/* Styling the header */
+
+header {
+  position: relative;
+  height: 100%;
+}
+
+#header-img-mobile {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#header-img-desktop {
+  display: none;
+}
+
+.content-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 25px;
+}
+
+.nav-links li a {
+  color: hsl(210, 6%, 47%);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+#contact {
+  font-family: "Fraunces", serif;
+  background-color: hsl(51, 96%, 49%);
+  padding: 12.5px 20px;
+  border-radius: 30px;
+}
+
+#contact a {
+  color: black;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
+  font-family: "Fraunces", serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  font-size: 38.5px;
+  padding: 70px 0;
+  padding-top: 125px;
+}
+
+/* Styling the main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview {
+  text-align: center;
+}
+
+.transform,
+.stand {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.graphic-photography {
+  flex-direction: column;
+}
+
+#transform-mobile-img,
+#stand-mobile-img,
+#graphic-mobile-img,
+#photo-mobile-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#transform-desktop-img,
+#stand-desktop-img,
+#photo-desktop-img,
+#graphic-desktop-img {
+  display: none;
+}
+
+.text {
+  padding: 25% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h2,
+.learn-more {
+  font-family: "Fraunces", serif;
+}
+
+.text h2 {
+  font-size: 31px;
+  font-weight: 800;
+  color: hsl(217, 23%, 16%);
+}
+
+.text p {
+  font-family: "Barlow", sans-serif;
+  margin: 25px 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  color: hsl(210, 6%, 47%);
+}
+
+.learn-more {
+  width: 135px;
+}
+
+.learn-more a {
+  font-size: 18px;
+  font-weight: 800;
+  color: hsl(217, 23%, 16%);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-blow {
+  height: 10px;
+  margin-top: -7.5px;
+  border-radius: 5px;
+}
+
+.transform .line-blow {
+  background-color: hsla(51, 100%, 62%, 0.552);
+}
+
+.stand .line-blow {
+  background-color: hsla(7, 99%, 70%, 0.512);
+}
+
+.graphic,
+.photo {
+  position: relative;
+}
+
+.graphic-photography h2 {
+  font-size: 31px;
+  font-weight: 800;
+  font-family: "Fraunces", serif;
+}
+
+.graphic-photography p {
+  font-family: "Barlow", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.graphic-content,
+.photo-content {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.photo h2,
+.photo p {
+  color: hsl(198, 62%, 26%);
+}
+
+.graphic h2,
+.graphic p {
+  color: hsl(167, 40%, 24%);
+}
+
+.testimonials {
+  padding: 25% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials h1 {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  color: hsla(210, 6%, 47%, 0.897);
+  font-size: 16.5px;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.tm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.tm-1,
+.tm-2,
+.tm-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.tm img {
+  width: 75px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.tm p {
+  font-family: "Barlow", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.5px;
+  color: hsl(210, 6%, 47%);
+}
+
+.name-position p {
+  font-size: 14px;
+}
+
+.name-position h3 {
+  font-size: 21px;
+  font-family: "Fraunces", serif;
+  color: hsl(217, 23%, 16%);
+  margin-bottom: 5px;
+}
+
+.pic-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pic {
+  width: 100%;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling the footer */
+
+footer {
+  background-color: hsla(168, 34%, 41%, 0.812);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 15% 10%;
+}
+
+#logo-footer path {
+  fill: hsl(167, 40%, 24%);
+}
+
+.links,
+.social-media {
+  display: flex;
+  gap: 40px;
+}
+
+.social-media {
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.links a {
+  color: hsl(167, 44%, 26%);
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+.social-media svg path {
+  fill: hsl(167, 40%, 24%);
+}
+
+#arrow {
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0% {
+    margin-top: 12px;
+  }
+  25% {
+    margin-top: 6px;
+  }
+  50% {
+    margin-top: 0px;
+  }
+  75% {
+    margin-top: 6px;
+  }
+  100% {
+    margin-top: 12px;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #3ebfff;
+}
+
+.nav-links {
+  background-color: white;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  padding: 35px 0;
+  width: 75%;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.nav-links-activate {
+  display: flex;
+}
