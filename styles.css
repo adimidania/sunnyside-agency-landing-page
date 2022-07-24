@@ -673,5 +673,30 @@ nav {
 
   #contact {
     background-color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
   }
+
+  #contact:hover {
+    background-color: rgba(255, 255, 255, 0.647);
+  }
+
+  #contact:hover a {
+    color: white;
+  }
+}
+
+/* For more interactivity */
+
+#logo,
+#logo-footer,
+.social-media svg {
+  cursor: pointer;
+}
+
+a {
+  transition: 0.3s ease;
+}
+a:hover {
+  opacity: 0.8;
 }
