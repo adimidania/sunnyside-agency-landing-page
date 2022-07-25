@@ -403,6 +403,13 @@ footer {
 }
 
 @keyframes arrow {
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/*
+@keyframes arrow {
   0% {
     margin-top: 12px;
   }
@@ -419,6 +426,7 @@ footer {
     margin-top: 12px;
   }
 }
+*/
 
 nav {
   position: fixed;
@@ -616,6 +624,13 @@ nav {
   #preview-mobile-3,
   #preview-mobile-4 {
     display: none;
+  }
+
+  #preview-desktop-1,
+  #preview-desktop-2,
+  #preview-desktop-3,
+  #preview-desktop-4 {
+    display: block;
   }
 
   /* Styling the footer */
